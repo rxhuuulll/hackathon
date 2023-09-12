@@ -1,0 +1,70 @@
+/* style.css */
+
+/* Remove the background-color and use the background-image */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('img/img3.jpg'); /* Replace 'img/img3.jpg' with your image path */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Add relative positioning to the body */
+}
+
+/* Style the logo */
+.logo {
+    position: absolute;
+    top: 20px; /* Adjust the top distance as needed */
+    left: 20px; /* Adjust the left distance as needed */
+    max-width: 100px; /* Set the maximum width of the logo */
+}
+
+/* Style the center container */
+.center-container {
+    background-image: url('img/img3.jpg'); /* Set the same image as the background for both containers */
+    background-size: cover;
+    background-position: center;
+    padding: 150px; /* Increase the padding to make it larger */
+    border-radius: 10px;
+    width: 800px; /* Increase the width as desired */
+    max-width: 90%; /* Set a maximum width to keep it responsive */
+}
+
+/* Style the inner container */
+.inner-container {
+    text-align: center;
+    padding: 30px;
+    width: 400px;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex; /* Use flexbox to place elements in a row */
+    justify-content: space-between; /* Space elements horizontally */
+    align-items: center; /* Center elements vertically */
+}
+
+/* Style the input and button */
+input[type="text"] {
+    flex: 1; /* Allow the input to expand and take available space */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: transparent; /* Set the background color to transparent */
+    border: 1px solid #0c0c0c; /* Add a border for visibility */
+    color: #000000; /* Set the text color */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a transition effect */
+}
+
+button:hover {
+    background-color: rgba(0, 116, 204, 0.2); /* Change button background color on hover */
+}
